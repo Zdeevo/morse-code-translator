@@ -5,18 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <script src="main.js" defer></script>
+  <!-- <script type="module" src="english.js" defer></script>
+  <script type="module" src="morse.js" defer></script> -->
+
+
+
   <title>Morse Code Translator</title>
 </head>
 <body>
 <div class="container">  
-  <div class="input">
-    <input class="input-box" type="text" id="input-box" placeholder="Type English here"><br>
-    <button class="translate" onclick=translateFunction()>Translate</button>
+
+
+
+
+<!-- Translate English to Morse -->
+
+  <div class="inputEng">
+    <input class="inputBoxEng" type="text" placeholder="Type English here"></input>
+    <button class="translateEng" onclick='translateEnglish()'>English to Morse</button>
   </div>
 
-  <div class="output">
-    <p class="output-box">Output morse here</p>
-    <button class="refresh" onclick=refreshFunction()>Refresh</button>
+  <div class="outputMor">
+    <p class="outputBoxMor"></p>
+    <button class="refresh" onclick='refreshEnglish()'>Refresh</button>
+  </div>
+
+
+
+
+
+
+
+  <!-- Translate Morse to English -->
+
+  <div class="inputMor">
+    <input class="inputBoxMor" type="text" placeholder="Type Morse here"></input>
+    <button class="translateMor" onclick='translateMorse()'>Morse to English</button>
+  </div>
+
+  <div class="outputEng">
+    <p class="outputBoxEng"></p>
+    <button class="refresh" onclick='refreshMorse()'>Refresh</button>
   </div>
 </div>
 </body>
