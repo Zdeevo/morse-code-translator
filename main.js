@@ -121,6 +121,7 @@ outputMor.innerHTML = morseOutput;
 const refreshEnglish = () => {
   outputMor.innerHTML = null;
   inputEng.value = null;
+  morseRaw = [];
 }
 
 /////////////////////////////
@@ -154,5 +155,6 @@ outputEng.innerHTML = englishOutput;
 const refreshMorse = () => {
   outputEng.innerHTML = null;
   inputMor.value = null;
+  englishRaw = [];
 }
 

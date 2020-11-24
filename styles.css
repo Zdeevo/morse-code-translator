@@ -2,42 +2,134 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-body {
-  background-color: darkslategrey;
+  font-family: monospace;
 }
 
 .container {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-image: url("./assets/morse-wallpaper.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container .mainHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0px 0px 5px rebeccapurple;
+  font-size: 3.5rem;
+  padding: 30px;
+  text-shadow: 0px 0px 30px chartreuse;
+  color: limegreen;
+}
+
+.translator {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 50px;
+  padding-top: 5%;
 }
-
-.input, .output {
-  align-content: center;
-  width: auto;
-  min-width: 80%;
-  border: 1px solid black;
-  margin: 10px;
+.translator .englishToMorse {
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: orange;
+  padding: 10px;
+  margin: 30px;
+  box-shadow: 0px 0px 8px darkslateblue;
 }
-.input button, .output button {
-  font-size: 1.5rem;
-  margin: 10px 0px;
+.translator .englishToMorse .inputEng {
+  display: flex;
+  padding: 20px;
 }
-
-.output-box {
-  border: 1px solid black;
-  background-color: white;
-  width: 100%;
+.translator .englishToMorse .inputEng .inputBoxEng {
+  width: 400px;
   height: 30px;
-  font-size: 1.5rem;
+  margin: 5px;
+  padding: 2px;
+  font-size: 20px;
+  border: 1px solid brown;
 }
-
-.input-box {
-  width: 100%;
-  font-size: 1.5rem;
+.translator .englishToMorse .inputEng .translateEng {
+  height: 30px;
+  width: 150px;
+  margin: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 1px solid brown;
+}
+.translator .englishToMorse .outputMor {
+  display: flex;
+  padding: 20px;
+}
+.translator .englishToMorse .outputMor .outputBoxMor {
+  justify-content: end;
+  width: 400px;
+  height: 30px;
+  margin: 5px;
+  font-size: 12px;
+  background-color: white;
+  border: 1px solid brown;
+}
+.translator .englishToMorse .outputMor .refresh {
+  height: 30px;
+  width: 150px;
+  margin: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 1px solid brown;
+}
+.translator .morseToEnglish {
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: aqua;
+  padding: 10px;
+  margin: 30px;
+  box-shadow: 0px 0px 8px darkslateblue;
+}
+.translator .morseToEnglish .inputMor {
+  display: flex;
+  padding: 20px;
+}
+.translator .morseToEnglish .inputMor .inputBoxMor {
+  width: 400px;
+  height: 30px;
+  margin: 5px;
+  padding: 2px;
+  font-size: 12px;
+  border: 1px solid brown;
+}
+.translator .morseToEnglish .inputMor .translateMor {
+  height: 30px;
+  width: 150px;
+  margin: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 1px solid brown;
+}
+.translator .morseToEnglish .outputEng {
+  display: flex;
+  padding: 20px;
+}
+.translator .morseToEnglish .outputEng .outputBoxEng {
+  justify-content: end;
+  width: 400px;
+  height: 30px;
+  margin: 5px;
+  font-size: 12px;
+  background-color: white;
+  border: 1px solid brown;
+  font-size: 20px;
+}
+.translator .morseToEnglish .outputEng .refresh {
+  height: 30px;
+  width: 150px;
+  margin: 5px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 1px solid brown;
 }

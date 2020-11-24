@@ -121,6 +121,7 @@ var translateEnglish = function translateEnglish() {
 var refreshEnglish = function refreshEnglish() {
   outputMor.innerHTML = null;
   inputEng.value = null;
+  morseRaw = [];
 }; /////////////////////////////
 // Morse to English section//
 /////////////////////////////
@@ -152,4 +153,5 @@ var translateMorse = function translateMorse() {
 var refreshMorse = function refreshMorse() {
   outputEng.innerHTML = null;
   inputMor.value = null;
+  englishRaw = [];
 };
